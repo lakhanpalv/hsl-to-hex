@@ -1,12 +1,29 @@
 {
-  "name": "hsl-to-hex",
+  "name": "@viveklakhanpal/hsl-to-hex",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint && tap --cov test",
+    "lint": "semistandard-format"
   },
   "keywords": [],
   "author": "Vivek Lakhanpal",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lakhanpalv/hsl-to-hex.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lakhanpalv/hsl-to-hex/issues"
+  },
+  "homepage": "https://github.com/lakhanpalv/hsl-to-hex#readme",
+  "description": "Convert HSL colors to RGB colors in hex format.",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "hsl-to-rgb-for-reals": "^1.1.1"
+  },
+  "devDependencies": {
+    "standard": "^14.3.1",
+    "tap": "^14.9.2"
+  }
 }
